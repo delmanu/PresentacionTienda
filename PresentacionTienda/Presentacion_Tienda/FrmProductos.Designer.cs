@@ -52,6 +52,7 @@
             this.dtgvProductos.RowTemplate.Height = 24;
             this.dtgvProductos.Size = new System.Drawing.Size(1161, 509);
             this.dtgvProductos.TabIndex = 0;
+            this.dtgvProductos.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvProductos_CellClick);
             // 
             // txtBuscar
             // 
@@ -108,6 +109,7 @@
             this.btnEliminar.TabIndex = 6;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = false;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // label1
             // 

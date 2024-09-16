@@ -33,5 +33,15 @@ namespace Manejadores
                 return "Ha ocurrido un error";
             }
         }
+
+        public void Borrar(int id, string Dato)
+        {
+            DialogResult rs = MessageBox.Show($"¿Está seguro de borrar {Dato}?\nUna vez borrado, ¡no se podrá recuperar!", "¡Atención!", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (rs == DialogResult.Yes)
+            {
+                b.Comando($"delete from productos where idProducto = {id}");
+                MessageBox.Show("Registro Eliminado.", "¡Atencion!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
     }
 }
