@@ -18,6 +18,14 @@ namespace Presentacion_Tienda
         {
             InitializeComponent();
             mp = new ManejadorProductos();
+            if (FrmProductos.id > 0 )
+            {
+                label1.Text = "Modificando un producto";
+                btnAgregar.Text = "Modificar";
+                txtNombre.Text = FrmProductos.nombre;
+                txtDescripcion.Text = FrmProductos.descripcion;
+                txtPrecio.Text = FrmProductos.costo.ToString();
+            }
         }
 
         private void txtPrecio_KeyPress(object sender, KeyPressEventArgs e)
@@ -37,8 +45,16 @@ namespace Presentacion_Tienda
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(mp.Guardar(txtNombre, txtDescripcion, txtPrecio));
-            Close();
+            if (FrmProductos.id > 0)
+            {
+                mp.Modificar(FrmProductos.id, txtNombre, txtDescripcion, txtPrecio);
+                Close();
+            }
+            else
+            {
+                MessageBox.Show(mp.Guardar(txtNombre, txtDescripcion, txtPrecio));
+                Close();
+            }
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)

@@ -43,5 +43,11 @@ namespace Manejadores
                 MessageBox.Show("Registro Eliminado.", "¡Atencion!", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
+
+        public void Modificar(int id, TextBox nombre, TextBox descripcion, TextBox precio)
+        {
+            b.Comando($"CALL p_modificarProducto(11, '{nombre.Text}', '{descripcion.Text}', {precio.Text})");
+            MessageBox.Show("Registro modificado!", "¡Atencion!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
     }
 }

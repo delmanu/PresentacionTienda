@@ -14,7 +14,7 @@ namespace Presentacion_Tienda
     public partial class FrmProductos : Form
     {
         ManejadorProductos mp;
-        int fila, columna, id;  string nombre, descripcion; double costo;
+        public static int fila, columna, id;  public static string nombre, descripcion; public static double costo;
         public FrmProductos()
         {
             InitializeComponent();
@@ -36,6 +36,22 @@ namespace Presentacion_Tienda
             FrmAgregarProducto fap = new FrmAgregarProducto(); //XD
             fap.ShowDialog();
             mp.Mostrar(dtgvProductos, txtBuscar.Text);
+        }
+
+        private void btnModificar_Click(object sender, EventArgs e)
+        {
+            id = 0; nombre = string.Empty; descripcion = string.Empty; costo = 0;
+
+            id = int.Parse(dtgvProductos.Rows[fila].Cells[0].Value.ToString());
+            nombre = dtgvProductos.Rows[fila].Cells[1].Value.ToString();
+            descripcion = dtgvProductos.Rows[fila].Cells[2].Value.ToString();
+            costo = double.Parse(dtgvProductos.Rows[fila].Cells[3].Value.ToString());
+
+            FrmAgregarProducto ap = new FrmAgregarProducto(); 
+            ap.ShowDialog();
+
+            mp.Mostrar(dtgvProductos, txtBuscar.Text);
+            txtBuscar.Focus();
         }
 
         private void txtBuscar_TextChanged(object sender, EventArgs e)
