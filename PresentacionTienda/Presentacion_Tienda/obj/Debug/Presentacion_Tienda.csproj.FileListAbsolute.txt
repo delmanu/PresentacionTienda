@@ -1,0 +1,9 @@
+C:\Users\carlo\Desktop\Archivos\GIT\PracticaNo9\PresentacionTienda\Presentacion_Tienda\bin\Debug\Presentacion_Tienda.exe.config
+C:\Users\carlo\Desktop\Archivos\GIT\PracticaNo9\PresentacionTienda\Presentacion_Tienda\bin\Debug\Presentacion_Tienda.exe
+C:\Users\carlo\Desktop\Archivos\GIT\PracticaNo9\PresentacionTienda\Presentacion_Tienda\bin\Debug\Presentacion_Tienda.pdb
+C:\Users\carlo\Desktop\Archivos\GIT\PracticaNo9\PresentacionTienda\Presentacion_Tienda\obj\Debug\Presentacion_Tienda.csproj.AssemblyReference.cache
+C:\Users\carlo\Desktop\Archivos\GIT\PracticaNo9\PresentacionTienda\Presentacion_Tienda\obj\Debug\Presentacion_Tienda.Properties.Resources.resources
+C:\Users\carlo\Desktop\Archivos\GIT\PracticaNo9\PresentacionTienda\Presentacion_Tienda\obj\Debug\Presentacion_Tienda.csproj.GenerateResource.cache
+C:\Users\carlo\Desktop\Archivos\GIT\PracticaNo9\PresentacionTienda\Presentacion_Tienda\obj\Debug\Presentacion_Tienda.csproj.CoreCompileInputs.cache
+C:\Users\carlo\Desktop\Archivos\GIT\PracticaNo9\PresentacionTienda\Presentacion_Tienda\obj\Debug\Presentacion_Tienda.exe
+C:\Users\carlo\Desktop\Archivos\GIT\PracticaNo9\PresentacionTienda\Presentacion_Tienda\obj\Debug\Presentacion_Tienda.pdb

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace PresentacionTienda
+namespace FormularioTienda
 {
     internal static class Program
     {
@@ -16,7 +16,7 @@ namespace PresentacionTienda
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmProductos());
+            Application.Run(new Form1());
         }
     }
 }

@@ -19,8 +19,7 @@ namespace Manejadores
             Tabla.DataSource = b.Consultar($"SELECT * FROM libros WHERE TituloLibro LIKE '%{filtro}%'", "libros").Tables[0];
             Tabla.AutoResizeColumns();
             Tabla.AutoResizeRows();
-            //Tabla.Columns.Insert(9, Boton("Eliminar", Color.Red));
-            //Tabla.Columns.Insert(10, Boton("Modificar", Color.Green));
+
         }
 
         public string Guardar(TextBox Titulo, TextBox ISBN, TextBox Autor, TextBox Editorial, TextBox Genero, TextBox Idioma, DateTimePicker AñoPublicacion, int Cantidad)
