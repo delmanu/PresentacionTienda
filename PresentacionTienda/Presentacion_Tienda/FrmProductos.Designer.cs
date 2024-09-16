@@ -43,20 +43,23 @@
             // 
             // dtgvProductos
             // 
+            this.dtgvProductos.AllowUserToAddRows = false;
+            this.dtgvProductos.AllowUserToDeleteRows = false;
             this.dtgvProductos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgvProductos.Location = new System.Drawing.Point(184, 139);
             this.dtgvProductos.Name = "dtgvProductos";
             this.dtgvProductos.RowHeadersWidth = 51;
             this.dtgvProductos.RowTemplate.Height = 24;
-            this.dtgvProductos.Size = new System.Drawing.Size(867, 509);
+            this.dtgvProductos.Size = new System.Drawing.Size(1161, 509);
             this.dtgvProductos.TabIndex = 0;
             // 
             // txtBuscar
             // 
             this.txtBuscar.Location = new System.Drawing.Point(184, 101);
             this.txtBuscar.Name = "txtBuscar";
-            this.txtBuscar.Size = new System.Drawing.Size(867, 32);
+            this.txtBuscar.Size = new System.Drawing.Size(1161, 32);
             this.txtBuscar.TabIndex = 1;
+            this.txtBuscar.TextChanged += new System.EventHandler(this.txtBuscar_TextChanged);
             // 
             // splitter1
             // 
@@ -64,7 +67,7 @@
             this.splitter1.Dock = System.Windows.Forms.DockStyle.Top;
             this.splitter1.Location = new System.Drawing.Point(0, 0);
             this.splitter1.Name = "splitter1";
-            this.splitter1.Size = new System.Drawing.Size(1063, 69);
+            this.splitter1.Size = new System.Drawing.Size(1357, 69);
             this.splitter1.TabIndex = 2;
             this.splitter1.TabStop = false;
             // 
@@ -85,6 +88,7 @@
             this.btnAgregar.TabIndex = 4;
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.UseVisualStyleBackColor = true;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
             // btnModificar
             // 
@@ -128,7 +132,7 @@
             // 
             // btnCerrar
             // 
-            this.btnCerrar.Location = new System.Drawing.Point(933, 20);
+            this.btnCerrar.Location = new System.Drawing.Point(1227, 19);
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Size = new System.Drawing.Size(118, 34);
             this.btnCerrar.TabIndex = 9;
@@ -140,7 +144,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1063, 660);
+            this.ClientSize = new System.Drawing.Size(1357, 660);
             this.Controls.Add(this.btnCerrar);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -156,6 +160,7 @@
             this.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.Name = "FrmProductos";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.FrmProductos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dtgvProductos)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
